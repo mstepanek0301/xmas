@@ -1,6 +1,6 @@
-import { handleSubmit } from '/js/password.js'
-import { addKey } from '/js/keys.js'
-import { puzzleId, year } from '/js/meta.js'
+import { handleSubmit } from '/xmas/js/password.js'
+import { addKey } from '/xmas/js/keys.js'
+import { puzzleId, year } from '/xmas/js/meta.js'
 
 handleSubmit((correct, password, key) => {
   const id = puzzleId()

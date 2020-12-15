@@ -1,4 +1,4 @@
-import { getKey } from '/js/keys.js'
+import { getKey } from '/xmas/js/keys.js'
 
 const items = Array.from(document.getElementsByClassName('locked'))
 const pattern = /\$\d+/

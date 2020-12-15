@@ -1,4 +1,4 @@
-import { year } from '/js/meta.js'
+import { year } from '/xmas/js/meta.js'
 
 const storage = window.localStorage
 
