@@ -1,0 +1,15 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+{% block number %}2{% endblock %}
+{% block name %}Poznáš Slovensko?{% endblock %}
+{% block content %}
+  <figure>
+    <img src="crossword.svg">
+  </figure>
+  {{ super() }}
+{% endblock %}
+{% block hint -%}
+  Obyčajná krížovka s tajničkou, a indície máte rovno v nej a v názve.
+{%- endblock %}
+{% block password -%}
+  eccffcea392c9e9776dc21d9d1cb0394af5ee09c9cde4a28bfc9bf9659af0758
+{%- endblock %}

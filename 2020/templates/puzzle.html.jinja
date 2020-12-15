@@ -1,0 +1,23 @@
+{% extends "2020/templates/base.html.jinja" %}
+{% block title %}
+  {% block number %}{% endblock %}. {% block name %}{% endblock %}
+{% endblock %}
+{% block decoration %}{{ self.number() }}{% endblock %}
+{% block heading %}{{ self.name() }}{% endblock %}
+{% block content %}
+  <form id="submit-box">
+    <input type="text" id="password" placeholder="Sem zadajte heslo&hellip;"
+      autocomplete="off" data-key="{% block password %}{% endblock %}">
+    <input type="submit" class="material-icons" value="arrow_forward">
+  </form><br>
+  <button onclick="alert(`{% block hint %}{% endblock %}`)">
+    Nápoveda
+  </button>
+  <a class="button locked" href="/2020/${{ self.number() }}/solution.html">
+    Riešenie
+  </a>
+{% endblock %}
+{% block scripts %}
+  <script src="/js/submit.js" type="module"></script>
+  <script src="/js/sjcl/sjcl.js"></script>
+{% endblock %}
