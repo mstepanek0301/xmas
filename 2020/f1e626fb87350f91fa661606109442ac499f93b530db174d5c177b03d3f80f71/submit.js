@@ -11,7 +11,7 @@ handleSubmit((correct, password, key) => {
   if (password == correct) {
     window.alert('Gratulujem, úspešne ste vyriešili šifru!')
     addKey(puzzleId(), key)
-    window.location = `/2020/${key}/puzzle.html`
+    window.location = `/xmas/2020/${key}/puzzle.html`
   } else {
     const value = table[password]
     if (value === undefined) window.alert('Toto slovo nepoznám.')
