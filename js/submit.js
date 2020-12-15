@@ -7,7 +7,7 @@ handleSubmit((correct, password, key) => {
   if (password == correct) {
     window.alert('Gratulujem, úspešne ste vyriešili šifru!')
     addKey(id, key)
-    window.location = `/${year()}/${key}/${
+    window.location = `/xmas/${year()}/${key}/${
       id === '10'? 'outro': 'puzzle'
     }.html`
   } else {
