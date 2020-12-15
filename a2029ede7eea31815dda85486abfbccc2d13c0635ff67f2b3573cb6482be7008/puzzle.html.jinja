@@ -1,0 +1,35 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+{% block number %}9{% endblock %}
+{% block name %}Obrázková{% endblock %}
+{% block content %}
+  <div class="container">
+    <img src="01.svg" class="box">
+    <img src="02.svg" class="box">
+    <img src="03.svg" class="box">
+    <img src="04.svg" class="box">
+    <img src="05.svg" class="box">
+    <img src="06.svg" class="box">
+    <div class="no-break"><img src="07.svg" class="box">
+    <div class="box">?</div></div>
+    <img src="08.svg" class="box">
+    <div class="no-break"><img src="09.svg" class="box">
+    <div class="box">,</div></div>
+    <img src="10.svg" class="box">
+    <img src="11.svg" class="box">
+    <img src="12.svg" class="box">
+    <img src="13.svg" class="box">
+    <img src="14.svg" class="box">
+    <div class="no-break"><img src="15.svg" class="box">
+    <div class="box">.</div></div>
+  </div>
+  {{ super() }}
+{% endblock %}
+{% block hint -%}
+  Túto “šifru” vymysleli už pred tisíckami rokov a dodnes sa používa, len v trochu inej podobe. Ak neviete, ako ju rozlúštiť, skúste si o danej téme niečo vyhľadať. Heslo, ktoré vám odkaz povie, sa dá jednoducho povedať jedným slovom, len sa treba zamyslieť.
+{%- endblock %}
+{% block password -%}
+  d682efc4ae9ea50da8985b080a63a586cf389d1b26b78e27ca72508eb29b5fda
+{%- endblock %}
+{% block meta %}
+  <link rel="stylesheet" href="style.css">
+{% endblock %}

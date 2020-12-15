@@ -1,0 +1,13 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+{% block number %}1{% endblock %}
+{% block name %}Štartová{% endblock %}
+{% block content %}
+  <p>Vitajte! Som rád, že ste sa rozhodli lúštiť tieto šifry, a chcem vám zaželať veselé Vianoce. Túto šifru určite vyriešite rýchlo, a keď budete mať ešte energiu, môžete rovno začať s ďalšou. Tak teda veľa šťastia!</p>
+  {{ super() }}
+{% endblock %}
+{% block hint -%}
+  “Nápovedu netreba, štartová šifra je jednoduchá!”
+{%- endblock %}
+{% block password -%}
+  066412349e8c90325c61ff2fc0b2a170719c5ea8a2cae579bbe478482f945788
+{%- endblock %}

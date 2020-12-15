@@ -1,0 +1,21 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+{% block number %}10{% endblock %}
+{% block name %}Záverečná{% endblock %}
+{% block content %}
+  <p>Prvé slovo, tretie písmeno.</p>
+  <p>Druhé slovo, piate písmeno.</p>
+  <p>Tretie slovo, posledné písmeno.</p>
+  <p>Štvrté slovo, druhé písmeno.</p>
+  <p>Piate slovo, posledné písmeno.</p>
+  <p>Šieste slovo, piate písmeno.</p>
+  <p>Siedme slovo, prvé písmeno.</p>
+  <p>Ôsme slovo, druhé písmeno.</p>
+  <p>Deviate slovo, druhé písmeno.</p>
+  {{ super() }}
+{% endblock %}
+{% block hint -%}
+  Kde by sa dalo nájsť práve toľko slov, koľko od vás chce šifra? A ktoré by mohlo byť prvé?
+{%- endblock %}
+{% block password -%}
+  37299d0566752eb03fe7076003689a8b70854f32e085cde4e0ab9f6f56e20e12
+{%- endblock %}
