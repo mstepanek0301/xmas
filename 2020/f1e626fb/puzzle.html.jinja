@@ -1,0 +1,13 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+{% block number %}7{% endblock %}
+{% block name %}Pokus, omyl{% endblock %}
+{% block hint -%}
+  Ak ste ešte neskúsili zadať žiadne heslo, nebojte sa toho. Ktoré slová sa mi páčia? A ako ich pomenovať jedným slovom?
+{%- endblock %}
+{% block password -%}
+  44592926
+{%- endblock %}
+{% block scripts %}
+  <script src="submit.js" type="module"></script>
+  <script src="/xmas/js/sjcl/sjcl.js"></script>
+{% endblock %}

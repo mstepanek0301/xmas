@@ -1,0 +1,15 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+{% block number %}6{% endblock %}
+{% block name %}Jazyková{% endblock %}
+{% block content %}
+  <figure>
+    <img src="graph.svg">
+  </figure>
+  {{ super() }}
+{% endblock %}
+{% block hint -%}
+  Každý obrázok predstavuje jedno slovo, a čiary predstavujú súvislosť medzi slovami. Plná čiara je jeden druh súvislosti, a prerušovaná čiara iný druh.
+{%- endblock %}
+{% block password -%}
+  cdd8b461
+{%- endblock %}

@@ -1,0 +1,13 @@
+{% extends "2020/templates/puzzle.html.jinja" %}
+{% block number %}8{% endblock %}
+{% block name %}Fonetická{% endblock %}
+{% block content %}
+  <p style="transform: scaleX(-1)">Hush-tee-YEPP-uh ha-ing-ICK-hull NAM-uh-vuss NOO-she-yall-err-in hush-tee-EPP-uh-ny NAM-ut-zee OOH, NAAS SE-vaath HOWM-zee a-VAATH snam-ZEE-huh a-NONE-ve-how SIR-sis-na sir-hurr, see-ETS-na HAW-wood-the a-NAAN-the-haw hush-tee-YEPP-uh ha-ing-ICK-hull-zee NAM-uh.</p>
+  {{ super() }}
+{% endblock %}
+{% block hint -%}
+  Text je otočený naopak, tak ho otočte, aby bol dobre. Dúfam, že nemáte problém s angličtinou.
+{%- endblock %}
+{% block password -%}
+  ed415da6
+{%- endblock %}

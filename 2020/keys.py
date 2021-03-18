@@ -1,7 +1,7 @@
 from hashlib import sha256
 
 def get_hash(password):
-    return sha256(bytes(password, encoding = 'utf-8')).hexdigest()
+    return sha256(bytes(password, encoding = 'utf-8')).hexdigest()[:8]
 
 lower, upper = [], []
 

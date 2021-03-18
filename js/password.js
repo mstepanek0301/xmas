@@ -9,7 +9,7 @@ const hexdigest = byteArray => byteArray.reduce(
   (result, item) => (result +
 		(item >>> 0).toString(16).padStart(8, 0)
 	), ''
-)
+).substr(0, 8)
 
 const computeHash = string => hexdigest(sjcl.hash.sha256.hash(string))
 
