@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sk" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {% block title %}{% endblock %} | Julegåden {% block year %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="/xmas/css/theme.css">
+    {% block meta %}{% endblock %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 lang="da">Julegåden</h1>
+        <label for="show-nav">
+          <span class="material-icons">drag_handle</span>
+        </label>
+      </header>
+      <article><div>
+        <h1>
+          <div id="number">{% block decoration %} {% endblock %}</div>
+          {% block heading %}{{ self.title() }}{% endblock %}
+        </h1>
+        {% block content %}{% endblock %}
+      </div></article>
+    </div>
+    <input type="checkbox" id="show-nav">
+    <nav><div>
+      <label for="show-nav"><span class="material-icons">close</span></label>
+      <h1 lang="da">Jule<br>gåden</h1>
+      <h2 id="year">{{ self.year() }}</h2>
+      {% block nav %}{% endblock %}
+    </div></nav>
+  </body>
+  <script src="/xmas/js/links.js" type="module"></script>
+  {% block scripts %}{% endblock %}
+</html>

@@ -1,12 +1,14 @@
 from jinja2 import Environment, FileSystemLoader
 from pathlib import Path
 
+root = input('Directory to build: ')
+
 env = Environment(
     loader = FileSystemLoader(''), autoescape = 'html',
     trim_blocks = True, lstrip_blocks = True
 )
 
-for path in Path('./2020').glob('**/*.html.jinja'):
+for path in Path(root).glob('**/*.html.jinja'):
     if 'templates' in path.parts: continue
     template = env.get_template(path.as_posix())
     with open(
